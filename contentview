@@ -1,0 +1,61 @@
+
+
+ContentView
+HomeView
+DoseMate >
+DoseMate ContentView> No Selection
+import SwiftUI
+
+class User: ObservableObject {
+
+}
+@Published var username: String =
+struct ContentView: View {
+DoseMateApp
+Assets
+
+
+@State private var username: String @State private var password: String
+
+@State private var isLoggedIn: Bool = false
+
+@State private var scale: CGFloat = 0.5
+
+@State private var opacity: Double = 0
+
+
+@State private var showErrorAlert: Bool = false @State private var showHomeView = false
+
+@StateObject var user = User()
+var body: some View {
+VStack {
+if isLoggedIn{
+HomeView()
+马
+Content View
+DoseMate
+Your Partner in Personalized Diabetes Care
+
+.environmentObject(user)
+
+} else {
+
+VStack {
+let myImage = UIImage(named: "home.png") Image(uiImage: myImage!)
+.resizable()
+.aspectRatio(contentMode: .fit)
+.frame(width: 300, height: 300)
+.scaleEffect(scale)
+.opacity (opacity)
+.onAppear {
+withAnimation(
+.easeInOut (duration: 2)) {
+self.scale = 1
+self.opacity= 1
+Username
+Password
+จ
+DoseMate
+000
+Login
+Line: 80 Col: 1
